@@ -3,7 +3,7 @@
  * Plugin Name: CBX Woo Better Order Management
  * Description: Advanced WooCommerce order date filtering with presets and AJAX support.
  * Plugin URI: https://github.com/codeboxrcodehub/cbxwoobetterordermanagement
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Codeboxr
  * Author URI: http://codeboxr.com
  * Text Domain: cbxwoobetterordermanagement
@@ -63,12 +63,12 @@ class CBXWooBetterOrderManagement {
         $display_value = $start_date && $end_date ? $start_date . ' - ' . $end_date : 'Select date range';
 
         ?>
-        <div class="cbx-date-filter-wrap" style="margin: 10px 0; display: inline-block; vertical-align: middle;">
+        <div class="cbx-date-filter-wrap" style="display: inline-block; vertical-align: middle;">
             <input type="text" id="cbx-daterange" name="cbx_daterange" value="<?php echo esc_attr($display_value); ?>" style="width: 240px; padding: 6px 10px;" readonly />
-            <!-- Hidden fields to submit actual values -->
             <input type="hidden" name="cbx_start_date" id="cbx_start_date" value="<?php echo $start_date; ?>" />
             <input type="hidden" name="cbx_end_date" id="cbx_end_date" value="<?php echo $end_date; ?>" />
             <input type="hidden" name="cbx_date_range" id="cbx_date_range" value="<?php echo $current_range; ?>" />
+            <a href="#" id="cbx-reset-date" style="margin-left: 10px; margin-right: 10px; font-size: 13px; color: #d63638;">Reset</a>
         </div>
         <?php
     }//end method render_date_filter_fields

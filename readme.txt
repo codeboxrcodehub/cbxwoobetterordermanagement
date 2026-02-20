@@ -3,7 +3,7 @@ Contributors: codeboxr,manchumahara
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 
 == Description ==
@@ -21,5 +21,8 @@ Adds advanced date filtering to WooCommerce order admin screen with:
 3. Visit WooCommerce → Orders to use the filters.
 
 == Changelog ==
+= 1.0.2 =
+* Added date range reset filter
+
 = 1.0.1 =
 * Initial release
